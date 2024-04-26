@@ -1,0 +1,57 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  /* float:; */
+  width: 100%;
+  background-color: #605e5e;
+  color: rgb(244, 241, 241);
+  padding: 18px 20px;
+  height: 60px;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: none;
+  }
+}
+
+.left-content{
+    font-size: 18px;
+    float: left;
+}
+.iconc{
+ font-size: 11px;   
+}
+.right-content{
+    display: flex;
+    float: right;
+    gap: 13px;
+    font-size: 18px;
+
+
+}
+.handles a{
+    color: rgb(47, 80, 247);
+}
+.handles a:hover{
+    color: rgb(24, 182, 245);
+}

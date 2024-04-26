@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin-top: 100px; */
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+/* .grid-container .left{
+    width: 40%;
+} */
+.flex-container{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 5vw;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+/* .flex-container .left{
+    width: 30%;
+} */
+
+.left{
+    padding: 25px;
+    border-radius: 12px;
+    /* padding: 3vw; */
+    /* border-radius: 2vw; */
+    border: .7px solid rgb(188, 186, 186);
+    width: 300px;
+    /* width: 340px; */
+
+}
+.left #container h1{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    /* margin-top: 30px; */
+    /* margin-bottom: ; */
+    /* margin-top: -1vw;
+    margin-bottom: 3vh; */
+
+}
+.left #container form input{
+    width: 100%;
+    height: 34px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    /* height: 6vh; */
+    /* padding: 1vw; */
+
+    /* margin-bottom: 2vh; */
+    /* border-radius: 1vh; */
+    border: .6px solid rgb(202, 198, 198);
+
+}
+.left #container #forgot-password{
+    text-align: center;
+    font-size: 12px;
+}
+.left #container #forgot-password a{
+    text-decoration: none;
+    color: black;
+}
+.left #container #forgot-password a:hover{
+    color: #4285F4;
+}
+.left #container #signin button{
+   width: 100%;
+    height: 35px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    /* height: 6vh; */
+    /* padding: 1vw; */
+    /* margin: 2vh 0 2vh 0; */
+    /* border-radius: 1vh; */
+    border: .6px solid rgb(202, 198, 198);
+    background-color: #00DFC0;
+    border: none;
+    color: white;
+    /* align-items: center; */
+
+
+}
+.left #container #signup{
+    text-align: center;
+    font-size: 12px;
+
+}
+.left #container #signup a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    /* font-size: 3px; */
+    /* font-size: 20px; */
+}
+.left #container #signup a:hover{
+    color: #4285F4;
+}
+.left #container #line{
+    width: 60%;
+    padding: 0 20% 0 20%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    height: 2px;
+    margin: 10px 20% 20px 20%;
+    /* margin: 2vh 20% 4vh 20%; */
+
+}
+.left #container #line #or{
+    position: absolute;
+    padding: 2px 15px 2px 15px;
+    background-color: white;
+    top: -10px;
+    
+
+}
+
+.left #container .social-links{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background-color: bisque; */
+    gap: 30px;
+    /* gap: 3vw; */
+    margin-bottom: 18px;
+    /* margin-bottom: 3vh; */
+}
+
+.left #container #facebook{
+    width: 50%;
+}
+.left #container #google{
+    width: 50%;
+}
+.left #container #facebook button{
+    width: 100%;
+    height: 40px;
+    /* height: 6vh; */
+    /* padding: ; */
+    /* padding: 1vh; */
+    border-radius: 6px;
+    /* padding: 5px; */
+    /* border-radius: 1vh; */
+    border: .6px solid rgb(201, 198, 198);
+    background-color: white;
+    color: black;
+    font-size: 11px;
+
+
+}
+.left #container #google button{
+     width: 100%;
+    height: 40px;
+    /* height: 6vh; */
+    /* padding: ; */
+    /* padding: 1vh; */
+    border-radius: 6px;
+    /* padding: 5px; */
+    /* border-radius: 1vh; */
+    border: .6px solid rgb(201, 198, 198);
+    background-color: white;
+    color: black;
+    font-size: 11px;
+
+    
+}
+.left #container #facebook button:hover, #google button:hover{
+    color: #4285F4;
+}
+.right{
+    width: 400px;
+
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+
+/* width: 100%;
+    height: 6vh;
+    padding: 1vw;
+    margin: 2vh 0 2vh 0;
+    border-radius: 1vh;
+    border: .6px solid rgb(202, 198, 198);
+    background-color: #00DFC0;
+    border: none;
+    color: white; */
+
+
+
+
+
+/* .login-block{
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 5vw;
+
+}
+
+.left{
+    background-color: aqua;
+    padding: 5vw;
+    border-radius: 3vw;
+    border: none;
+
+
+}
+.login-block .left #container h1{
+    text-align: center;
+
+}
+.login-block .left #container form input{
+    width: 100%;
+    height: 7vh;
+    padding: 1.2vw;
+    margin-bottom: 3vh;
+    border-radius: 1vh;
+    border: .6px solid rgb(202, 198, 198);
+
+} */

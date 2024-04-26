@@ -1,0 +1,184 @@
+*{
+    /* width: 100%; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    /* overflow-y: scroll; */
+}
+*::-webkit-scrollbar{
+    width: 0;
+}
+.home-log{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white ), url('https://image.slidesdocs.com/responsive-images/background/water-color-watercolor-nature-simple-white-powerpoint-background_fec7712ac8__960_540.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+}
+.home-log p{
+    padding: 50px;
+    font-size: 25px;
+    color: #5c5d5d;
+    /* height: 30%; */
+
+}
+.home-log-img{
+    width: 100%;
+    /* height: 100%; */
+    padding-top: 50px;
+}
+.home-log-img img{
+    width: 50%;
+    height:50%;
+    object-position: center;
+    object-fit: contain;
+}
+.home-slideshow{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+.left-button{
+    height: 100%;
+    width: 60px;
+    background-color: rgb(240, 240, 240);
+    opacity: 0.3;
+    left: 0;
+    position: absolute;
+
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.right-button{
+
+    height: 100%;
+    width: 60px;
+    background-color:  rgb(240, 240, 240);
+    opacity: 0.3;
+    right: 0;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+}
+.left-button:hover, .right-button:hover{
+    cursor: pointer;
+}
+
+.home-slideshow .image-slidshow{
+    overflow: hidden;
+    width: 100%;
+
+}
+.home-slideshow .image-slidshow img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+
+}
+.home-content{
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(249, 249, 249), white);
+}
+
+.home-add{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    /* height: 400px; */
+}
+
+
+
+
+
+
+.home-footer{
+    width: 100%;
+
+}
+
+.home-footer-first{
+    height: 40vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+
+}
+.box{
+    width: 20%;
+    height: 100%;
+    background-color: #EBEEEF;
+    padding: 20px;
+
+}
+.boxi{
+    width: 20%;
+    height: 100%;
+    background-color: #EBEEEF;
+    padding: 20px;
+}
+.box h3{
+    font-weight: 200;
+    font-size: 20px;
+    text-align: left;
+    color: #002F34;
+}
+.box ul{
+    list-style-type: none;
+    padding: 5px;
+    color: rgb(159, 156, 156)
+}
+.box ul li{
+    padding-bottom: 7px;
+}
+.box .contact-us a{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+.social-link-content{
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+    font-size: 23px;
+    justify-content: center;
+    /* color: rgb(216, 216, 216); */
+
+
+}
+.social-link-content .social-handle a{
+    text-decoration: none;
+    color: rgb(159, 156, 156)
+    /* color: brown; */
+
+}
+.social-link-content .social-handle a:hover{
+    color:rgb(96, 94, 94);
+}
+
+
+.home-footer-second{
+    height: 70px;
+    background-color:rgb(62, 62, 62);
+    width: 100%;
+    padding:25px;
+}
+.left-content{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.iconc{
+ font-size: 11px; 
+ color: whitesmoke;  
+}
+

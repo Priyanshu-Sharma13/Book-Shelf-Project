@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-block{
+    margin-top: 41px;
+    background-color: aqua;
+    overflow-y: scroll;
+    height: calc(100vh - 101px);
+    padding: 2vw;
+}
+.content-block::-webkit-scrollbar{
+    display: none;
+}
