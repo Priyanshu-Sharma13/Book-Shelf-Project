@@ -154,7 +154,6 @@ const BookForm = () => {
               <option value="Mystery">Mystery</option>
               <option value="Thriller">Thriller</option>
               <option value="Romance">Romance</option>
-              <option value="Science Fiction">Science Fiction (Sci-Fi)</option>
               <option value="Fantasy">Fantasy</option>
               <option value="Horror">Horror</option>
               <option value="Historical Fiction">Historical Fiction</option>
@@ -172,9 +171,6 @@ const BookForm = () => {
                 Religion/Spirituality
               </option>
               <option value="Poetry">Poetry</option>
-              <option value="Children's Literature/YA">
-                Children's Literature/YA (Young Adult)
-              </option>
             </select>
             <input
               type="number"
