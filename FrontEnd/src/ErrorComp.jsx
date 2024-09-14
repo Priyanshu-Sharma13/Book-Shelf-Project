@@ -24,10 +24,7 @@ const ErrorComp = () => {
     <div className="content-block" style={{ marginLeft, widthSize }}>
       <div className="error-comp-img">
         <h1>Please Login first...</h1>
-        {/* <img
-          src="https://media.istockphoto.com/id/1133420210/vector/notification-with-lock-and-password-on-screen-computer.jpg?s=612x612&w=0&k=20&c=meauFHJ6b5tm8mDKFCj-BYVozXLmVQ28SdYS1VEF4_4="
-          alt="Please login first."
-        /> */}
+        
       </div>
     </div>
   )

@@ -37,22 +37,10 @@ const Signup = () => {
           password: formData.password,
         }
       )
-      // axios.defaults.headers['Accept'] = 'application/json';
-      
-      // const accessToken = response?.data?.accessToken;
-      // const roles = response?.data?.roles;
-
       console.log(response.data)
-      // console.log()
       window.location.href = '/login'
-      // Optionally, redirect user to another page after successful registration
     } catch (error) {
-      console.log('Priyanshu')
-
-      // Check for different types of errors and display corresponding toast messages
       if (error.response) {
-        // The request was made and the server responded with a status code
-        // Display error message based on server response status code
         const statusCode = error.response.status
         if (statusCode === 400) {
           toast.error('Bad request! Please check your input.')
@@ -61,50 +49,17 @@ const Signup = () => {
         } else if (statusCode === 404) {
           toast.error('Not found! The requested resource does not exist.')
         } else {
-          // Handle other status codes if needed
           toast.error(`Error ${statusCode} occurred!`)
         }
       } else if (error.request) {
-        // The request was made but no response was received
         toast.error('Network error! Please check your internet connection.')
       } else {
-        // Other types of errors
         toast.error('An unexpected error occurred! Please try again later.')
       }
 
       console.error('Registration error:', error)
     }
   }
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault()
-  //   try {
-  //     const response = await fetch('/api/v1/auth/register', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({
-  //         name: formData.name,
-  //         email: formData.email,
-  //         password: formData.password,
-  //       }),
-  //     })
-
-  //     console.log("HIII")
-  //     if (!response.ok) {
-  //       throw new Error('Failed to register')
-  //     }
-
-  //     const responseData = await response.json()
-  //     console.log(responseData)
-
-  //     // Optionally, redirect user to another page after successful registration
-  //   } catch (error) {
-  //     console.error('Registration error:', error)
-  //   }
-  // }
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -132,7 +87,6 @@ const Signup = () => {
       capVal = capVal + value.charAt(index)
     }
     setCaptchaValue(capVal)
-    //  document.getElementById('captchaValue').innerHTML = capVal
   }
 
   useEffect(() => {
@@ -140,7 +94,6 @@ const Signup = () => {
   }, [])
 
   function checkPasswordStrength(password) {
-    //  const strengthIndicator = document.getElementById('strengthIndicator')
 
     let strength = 0
 
@@ -178,11 +131,8 @@ const Signup = () => {
       case 4:
         strengthText = 'Very Strong'
         break
-      // default:
-      //   strengthText = 'Weak'
     }
     setPasswordStrength(strengthText)
-    //  strengthIndicator.innerText = 'Password Strength: ' + strengthText
   }
 
   return (
@@ -223,28 +173,10 @@ const Signup = () => {
                       onChange={handleChange}
                       required
                     />
-                    {/* <!-- <i class="ri-lock-unlock-line"></i> --> */}
                   </div>
                   <div className="strength-indicator" id="strengthIndicator">
                     {passwordStrength}
                   </div>
-                  {/* <div id="confirm-password">
-                    <input type="text" placeholder="Confirm Password" />
-                  </div> */}
-                  {/* <div id="forgot-password">
-                    <a href="">Forgot password?</a>
-                  </div> */}
-                  {/* <div id="captcha">
-                    <div id="get-captcha">
-                      <p id="captchaValue">{captchaValue}</p>
-                    </div>
-                    <div id="refresh" onClick={regenerate}>
-                      <LuRefreshCcw />
-                    </div>
-                    <div id="enter-captcha">
-                      <input id="Captcha" type="text" placeholder="Captcha" />
-                    </div>
-                  </div> */}
 
                   <div id="signup">
                     <button type="submit" onClick={handleSubmit}>
@@ -279,7 +211,6 @@ const Signup = () => {
                   <a>
                     <Link to={'/login'}>Signin</Link>
                   </a>
-                  {/* <a href="">Signin</a> */}
                 </div>
               </div>
             </div>
@@ -319,28 +250,10 @@ const Signup = () => {
                       onChange={handleChange}
                       required
                     />
-                    {/* <!-- <i class="ri-lock-unlock-line"></i> --> */}
                   </div>
                   <div className="strength-indicator" id="strengthIndicator">
                     {passwordStrength}
                   </div>
-                  {/* <div id="confirm-password">
-                    <input type="text" placeholder="Confirm Password" />
-                  </div> */}
-                  {/* <div id="forgot-password">
-                    <a href="">Forgot password?</a>
-                  </div> */}
-                  {/* <div id="captcha">
-                    <div id="get-captcha">
-                      <p id="captchaValue">{captchaValue}</p>
-                    </div>
-                    <div id="refresh" onClick={regenerate}>
-                      <LuRefreshCcw />
-                    </div>
-                    <div id="enter-captcha">
-                      <input id="Captcha" type="text" placeholder="Captcha" />
-                    </div>
-                  </div> */}
 
                   <div id="signup">
                     <button type="submit" onClick={handleSubmit}>
@@ -375,7 +288,6 @@ const Signup = () => {
                   <a>
                     <Link to={'/login'}>Signin</Link>
                   </a>
-                  {/* <a href="">Signin</a> */}
                 </div>
               </div>
             </div>

@@ -22,7 +22,6 @@ const ItemContent = ({ item, category}) => {
 
     window.addEventListener('resize', handleResize)
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize)
     }
@@ -48,7 +47,6 @@ const ItemContent = ({ item, category}) => {
               <br />
               <FaPhoneAlt className="phone-icon" /> : {item.userDetails.phone}
             </div>
-            {/* <div className="phone"></div> */}
           </div>
         </div>
         <div className="itemcenter">
@@ -59,7 +57,6 @@ const ItemContent = ({ item, category}) => {
             <FaRegUser /> Name : {item.name}
           </div>
           <div className="categore">
-            {/* <BiCategory /> Category : {category} */}
           </div>
           <div className="categore">
             <GiRegeneration /> Edition : {item.edition}

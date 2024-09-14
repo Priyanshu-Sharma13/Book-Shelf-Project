@@ -8,7 +8,6 @@
 
 .category {
   margin-top: 20px;
-  /* margin-bottom: 20px; */
   width: 100%;
   padding:  10px 20px 20px 20px;
   border-radius: 6px;
@@ -31,7 +30,6 @@
   position: relative;
 }
 .line-filter{
-  /* background-color: rgb(248, 248, 248); */
   width: 100%;
   height: 35px;
   margin-top: -10px;
@@ -43,7 +41,6 @@
   display: flex;
   grid-gap: 20px;
   overflow-y: scroll;
-  /* text-decoration: none; */
 }
 
 .items-list::-webkit-scrollbar{
@@ -51,7 +48,6 @@
 }
 
 .item {
-  /* background-color: #f9f9f9; */
   padding: 10px 20px 20px 20px;
   border-radius: 5px;
   border: .4px solid rgb(217, 215, 215);
@@ -60,7 +56,6 @@
   position: relative;
   height: 100%;
 
-  /* text-decoration: none; */
 }
 
 .item img {
@@ -75,7 +70,6 @@
   font-size: 1rem;
   margin-top: 5px;
   color: #2b7987;
-  /* text-decoration: none; */
 }
 
 .item-category, .item-location {
@@ -83,8 +77,6 @@
   font-weight: 100;
   color: #7a7b7b;
   line-height: 30px;
-  /* text-underline-offset: none; */
-  /* text-decoration: none; */
 }
 .add-img{
   width: 100%;

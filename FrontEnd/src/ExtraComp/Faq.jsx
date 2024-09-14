@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import '../ExtraComp/Faq.css'
 function Faq() {
-  // Define the questions and answers
   const faqData = [
     {
       question: 'How do I buy a book on Bookshelf?',

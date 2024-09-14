@@ -115,18 +115,6 @@
     border-radius: 0 6px 6px 0;
 }
 
-
-/* .left #container #forgot-password{
-    text-align: center;
-    font-size: 12px;
-}
-.left #container #forgot-password a{
-    text-decoration: none;
-    color: black;
-}
-.left #container #forgot-password a:hover{
-    color: #4285F4;
-} */
 .left #container #signup button{
    width: 100%;
     height: 35px;
@@ -243,76 +231,6 @@ input:focus{
     /* background-color: white; */
 }
 
-
-
-
-
-/* .left #container #line{
-    width: 60%;
-    padding: 0 20% 0 20%;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    background-color: black;
-    height: 2px;
-    margin: 10px 20% 20px 20%;
-    margin: 2vh 20% 4vh 20%;
-
-} */
-/* .left #container #line #or{
-    position: absolute;
-    padding: 2px 15px 2px 15px;
-    background-color: white;
-    top: -10px;
-    
-
-} */
-
-/* .left #container .social-links{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: bisque;
-    gap: 30px;
-    gap: 3vw;
-    margin-bottom: 18px;
-    margin-bottom: 3vh;
-} */
-
-/* .left #container #facebook{
-    width: 50%;
-}
-.left #container #google{
-    width: 50%;
-} */
-/* .left #container #facebook button{
-    width: 100%;
-    height: 40px;
-    height: 6vh; 
-     padding: 1vh;
-    border-radius: 6px;
-    padding: 5px;
-     border-radius: 1vh;
-    border: .6px solid rgb(201, 198, 198);
-    background-color: white; 
-
-
-} */
-/* .left #container #google button{
-     width: 100%;
-    height: 40px;
-    height: 6vh;
-    padding: 1vh;
-    border-radius: 6px;
-    padding: 5px;
-    border-radius: 1vh;
-    border: .6px solid rgb(201, 198, 198);
-    background-color: white;
-
-    
-}  */
 .right{
     width: 400px;
 

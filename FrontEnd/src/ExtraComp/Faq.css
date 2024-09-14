@@ -1,12 +1,10 @@
 .bod_y {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(to right, rgb(253, 250, 250), rgb(237, 237, 237));
-    /* padding: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100vw;
-    /* height: max(100%, 100vh); */
     min-height: 100vh;
 }
 

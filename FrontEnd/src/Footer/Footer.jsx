@@ -22,8 +22,6 @@ function App() {
 
   return (
     <div className="app">
-      {/* <div className="container"></div> */}
-      {/* {windowWidth >= 600 && ( */}
         <footer className="footer">
           <div className="left-content">
             Copyright  {" "}
@@ -41,7 +39,6 @@ function App() {
             })}
           </div>
         </footer>
-      {/* )} */}
     </div>
   )
 }

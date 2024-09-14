@@ -16,10 +16,8 @@ const Dash = () => {
     try {
       const response = await axios.get('/api/v1/user/profile')
       const data = response.data
-      // Update state with fetched user profile data
       setUserProfile(data)
       console.log(data);
-      // Store user profile data in local storage
       localStorage.setItem('userProfile', JSON.stringify(data))
       setDisplay(true);
     } catch (error) {
@@ -81,77 +79,3 @@ const Dash = () => {
 }
 
 export default Dash
-
-
-
-// import React from 'react'
-// import '../ExtraComp/Dash.css'
-// import axios from 'axios'
-// import { useState, useEffect } from 'react'
-
-// const Dash = () => {
-//   const [userProfile, setUserProfile] = useState({})
-
-//   const fetchData = async () => {
-//     try {
-//       const response = await axios.get('/api/v1/user/profile')
-//       const data = response.data
-//       console.log(data)
-//       setUserProfile(data);
-//        console.log(userProfile.user.name)
-//        console.log(userProfile.user.phone)
-//        console.log(userProfile.user.age)
-//        console.log(userProfile.user.image)
-//     } catch (error) {
-//       console.log(error.response)
-//     }
-//   }
-
-//   // fetchData();
-//   useEffect(() => {
-//     fetchData();
-//   }, []);
-
-//   // useEffect(() => {
-//   //   axios
-//   //     .get('/api/v1/user/profile')
-//   //     .then((response) => {
-//   //       console.log(response.data)
-//   //       setUserProfile(response.data)
-
-//   //       console.log(userProfile.user.name)
-//   //       console.log(userProfile.user.phone)
-//   //       console.log(userProfile.user.age)
-//   //       console.log(userProfile.user.image)
-//   //     })
-//   //     .catch((error) => {
-//   //       console.log(error)
-//   //     })
-//   // }, [])
-
-//   return (
-//     <div className="b_ody">
-//       <div className="outer">
-//         <div className="user">User Profile</div>
-//         <div className="main">
-//           <div className="one">
-//             <img src={userProfile.user.image} alt="user" />
-//           </div>
-//           <div className="two">
-//             <h1>Details</h1>
-//             <div className="content__">Username : {userProfile.user.name}</div>
-//             <div className="content__">Age : {userProfile.user.age}</div>
-//             <div className="content__">
-//               Contact Number : {userProfile.user.phone}
-//             </div>
-//             <div className="content__">
-//               Location : {userProfile.user.location}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default Dash
